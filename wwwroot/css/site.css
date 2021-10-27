@@ -1,0 +1,272 @@
+﻿body {
+    background-color: #30304A;
+    color: white;
+    padding-top: 49px;
+}
+.body-padding{
+    padding-top:100px;
+}
+.navbar {
+    background-color: #30304A;
+}
+#hamburger{
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+    transition:0.35s;
+}
+#hamburger:hover{
+    color:#E8A534;
+}
+
+.navbar-brand{
+    margin: 0px 12px 5px 0px;
+}
+.nav-start{
+    max-width:500px;
+}
+.nav-middle{
+    max-width:650px;
+}
+.nav-end{
+    max-width:70px;
+}
+.nav-item{
+    font-size:13.5px;
+}
+nav .navbar-nav li a {
+    color:white  !important;
+    transition:0.35s;
+}
+nav .navbar-nav li a:hover{
+    color: #E8A534 !important;
+}
+.navbar-nav > .active > a {
+    color: #E8A534 !important;
+    text-decoration:underline solid 2px;
+    text-underline-position:under;
+    text-underline-offset:3px;
+}
+.searchbox {
+    width: 100%;
+    height: 32px;
+    background-color: #1F1F30;
+    color: #999999;
+    border: 0;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    padding-left: 27px !important;
+    padding-right: 50px !important;
+}
+.searchbox:focus{
+    outline:none;
+}
+.icon {
+    position: absolute;
+    color: #999999;
+    padding-left:6px !important;
+}
+.option-icon {
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    color: #999999;
+}
+.dropdown-icon {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    color: #999999;
+}
+#syncButton{
+    font-size:16.5px;
+    padding:5px 5px 5px 5px;
+    margin-top:3px;
+    margin-left:8px;
+    cursor:pointer;
+    transition:0.35s;
+}
+#syncButton:hover{
+    color:#E8A534;
+}
+#settingsButton {
+    font-size: 16.5px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 3px;
+    cursor:pointer;
+    transition:0.35s;
+}
+#settingsButton:hover {
+    color: #E8A534;
+}
+.max-charbox-width {
+    max-width: 248px;
+    padding-left: 5px;
+}
+.char-banner {
+    background-color: #30304A;
+}
+.char-box {
+    padding: 13px 12px 1px 6px;
+}
+.emblem-box {
+    background: url("https://www.bungie.net/common/destiny2_content/icons/73835952fbfdb9315de347b5abc2d087.jpg") no-repeat;
+    background-size:cover;
+    width:208px;
+    height:46px;
+}
+.char-info-1{
+    max-height:24px;
+}
+.char-text {
+    margin-left: 70px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%), 0px 0px 10px rgb(0 0 0 / 50%);
+}
+.char-level {
+    left: 27px;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-weight: 500;
+    color: #f5dc56;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%), 0px 0px 10px rgb(0 0 0 / 50%);
+    position:relative;
+    left:13px;
+    bottom:3px;
+}
+.light-icon{
+    max-width:8px;
+    max-height:8px;
+    position:relative;
+    bottom:5px;
+    left:4px;
+}
+.char-class{
+    margin:2px 0px 0px 56px;
+    font-size:12.5px;
+    filter:contrast(0.5);
+}
+.loadout-button {
+    max-width: 16px;
+    height: 46px;
+    background-color: #11111B;
+    padding:10px 0px 0px 0px;
+}
+.loadout-icon {
+    color: #D4D4D8;
+    font-size:13px;
+}
+.vault-logo {
+    background: url("/images/vault-logo.png") no-repeat;
+    background-size:contain;
+    max-width:40px;
+    height:40px;
+    left:22px;
+    top:3px;
+}
+.vault-text {
+    margin-left: 35px;
+    top: 7px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%), 0px 0px 10px rgb(0 0 0 / 50%);
+}
+.vault-box {
+    background: url("data:image/svg+xml,%3csvg viewBox='0 0 172.87 46' xmlns='http://www.w3.org/2000/svg'%3e%3cg fill='%232a2a2a'%3e%3cpath d='M155.18 11.6c-1.48 2.35-2.5 4.74-3.06 7.14.56-2.39 1.58-4.77 3.06-7.11 3.99-6.4 10.1-9.46 17.7-9.75v-.03c-7.6.29-13.68 3.35-17.7 9.75zM86.23 0H65.87l17.5 17.49c.44-6.07 1.41-11.9 2.86-17.49z'/%3e%3cpath d='m90.38 30.36.23 3.7-2.99-2.64c-.16-.13-.29-.23-.45-.39l-2.03-1.99c-1.64-1.61-3.31-3.28-4.99-4.92-4.38-4.38-8.82-8.78-13.16-13.16L56.04 0H33.06l4.46 4.46c7.85 7.85 15.83 15.83 23.68 23.71L79.03 46h31.2a66.738 66.738 0 0 1-4.02-22.4c-.07-8.36 1.27-16.24 3.96-23.6H93.38c-2.62 9.37-3.65 19.55-3 30.36zM23.24 0H0l9.59 9.61c1.29 1.32 2.73 2.77 3.83 3.86L45.94 46h23.27l-1.32-1.32zM113.45 26.85c.46 6.61 2.04 13.07 4.62 19.15h16.71c-4.18-6.74-6.36-14.39-6.47-22.85-.11-8.42 1.99-16.19 6.21-23.15h-16.69a59.207 59.207 0 0 0-4.38 26.85zM155.11 34.48c-3.2-5.17-4.2-10.48-2.99-15.74-1.23 5.26-.24 10.59 2.99 15.77 4.02 6.43 10.1 9.52 17.76 9.85v-.03c-7.62-.33-13.74-3.39-17.76-9.85z'/%3e%3cpath d='M155.11 34.48c4.02 6.47 10.13 9.52 17.76 9.85V1.89c-7.59.29-13.71 3.35-17.7 9.75-1.48 2.34-2.5 4.72-3.06 7.11-1.2 5.24-.2 10.56 3 15.73z'/%3e%3c/g%3e%3c/svg%3e") no-repeat;
+    background-color:rgb(49,50,51);
+    background-size:cover;
+    width: 208px;
+    height: 46px;
+}
+.power-stat{
+    max-height:17px;
+}
+.power-text{
+    color:#ccc;
+    font-size:13.3px;
+    position:relative;
+    right:3px;
+
+}
+.power-icon{
+    opacity:0.5;
+    max-width:17px;
+    max-height:17px;
+    margin-bottom:3px;
+}
+.base-power-icon {
+    opacity:0.5;
+    max-width: 17px;
+    max-height: 17px;
+    margin-bottom: 3px;
+    filter:invert(1);
+}
+.operator {
+    color: #cccc;
+    font-size: 12.5px;
+}
+.seasonal-power{
+    max-height:17px;
+    max-width:17px;
+    opacity:0.5;
+    filter:invert(1);
+    margin-bottom:1px;
+}
+.stat-row{
+    padding-left:6px;
+    padding-bottom:3px;
+}
+.stat-box{
+    padding-left:1px;
+}
+.stat-icon{
+    max-height:14px;
+    max-width:14px;
+}
+.stat-text{
+    color:#cccc;
+    font-size:11px;
+    position:relative;
+    right:2px;
+}
+.currency-row{
+    max-height:22px;
+}
+.currency-box{
+    padding-right:5px;
+}
+.currency-icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+.currency-value {
+    font-size: 11px;
+    color: #ccc;
+    position:relative;
+    right:3px;
+}
+.transmog-box{
+    padding-right:32px;
+}
+.transmog-red {
+    padding-right: 17px;
+}
+.vspace-icon{
+    max-width:14px;
+    max-height:14px;
+    opacity:0.6;
+    filter:invert(1);
+}
+.vspace-box {
+    padding-right:8px;
+}
+.vspace-text-pos{
+    position:relative;
+    left:0px;
+}
+.consumable-box{
+    padding-right:2px;
+}
+.mods-text-pos {
+    position:relative;
+    left:0px;
+}

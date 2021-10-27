@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Test</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/13f4c7ca3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-0 pb-1 pr-0 pl-0 ml-2">
+
+        <span id="hamburger" class="nav-item pr-3 pl-2"><i class="fas fa-bars"></i></span>
+        <a class="navbar-brand" href="#"> <img src="~/images/dim-logo.png" height="24" width="68" /> </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col p-0 nav-start">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active"><a class="nav-link" href="#">Inventory</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Progress</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Vendors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Records</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Loadout Optimizer</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Organizer</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Search bar-->
+                    <div class="col-7 p-0 nav-middle">
+                        <form class="form-inline nav-item mt-1" action="#">
+                            <i class="fas fa-search icon p-1"></i>
+                            <input class="searchbox" type="text" id="searchText" name="searchBox" placeholder="Search item/perk, is:dupe, is:maxpower, -is:blue, and more" />
+                            <span id="searchOption" class="option-icon p-1"><i class="fas fa-ellipsis-v"></i></span>
+                            <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span>
+                        </form>
+                    </div>
+                    <!--Sync settings icon-->
+                    <span id="syncButton" class="nav-item"><i class="fas fa-sync"></i></span>
+                    <span id="settingsButton" class="nav-item"><i class="fas fa-cog"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--second nav-->
+    <div class="container-fluid position-fixed char-banner">
+        <div class="row">
+            <!--1st character box-->
+            <div class="col max-charbox-width">
+                <div class="char-box">
+                    <!--char box-->
+                    <div class="emblem-box">
+                        <div class="row char-info-1">
+                            <!--char name and level-->
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col char-text p-0">Warlock</div>
+                                    <div class="col char-level p-0">
+                                        <img class="light-icon" src="~/images/light-icon.svg" />
+                                        1337
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col loadout-button text-center ">
+                                <span class="loadout-icon"><i class="fas fa-ellipsis-v"></i></span>
+                            </div>
+                        </div>
+                        <!--char class-->
+                        <div class="char-class p-0">Human</div>
+                    </div>
+                    <!--character power level-->
+                    <div class="power-stat">
+                        <img class="power-icon" src="https://www.bungie.net/common/destiny2_content/icons/7c30e0e489e51a3920b4446684fbcdb1.png" />
+                        <span class="power-text">1339</span>
+                        <span class="operator">=</span>
+                        <img class="base-power-icon" src="~/images/max-base-power-icon.svg" />
+                        <span class="power-text">1320</span>
+                        <span class="operator">+</span>
+                        <img class="seasonal-power" src="~/images/seasonal-power.svg" />
+                        <span class="power-text">19</span>
+                    </div>
+                </div>
+                <!--character stats-->
+                <div class="stat-row">
+                    <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c9aa8439fc71c9ee336ba713535569ad.png" />
+                    <span class="stat-text">30</span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/9f5f65d08b24defb660cebdfd7bae727.png" />
+                        <span class="stat-text">40</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/47e16a27c8387243dcf9b5d94e26ccc4.png" />
+                        <span class="stat-text">106</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/ca62128071dc254fe75891211b98b237.png" />
+                        <span class="stat-text">104</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/59732534ce7060dba681d1ba84c055a6.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c7eefc8abbaa586eeab79e962a79d6ad.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col max-charbox-width">
+                <div class="char-box">
+                    <!--char box-->
+                    <div class="emblem-box">
+                        <div class="row char-info-1">
+                            <!--char name and level-->
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col char-text p-0">Titan</div>
+                                    <div class="col char-level p-0">
+                                        <img class="light-icon" src="~/images/light-icon.svg" />
+                                        1331
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col loadout-button text-center ">
+                                <span class="loadout-icon"><i class="fas fa-ellipsis-v"></i></span>
+                            </div>
+                        </div>
+                        <!--char class-->
+                        <div class="char-class p-0">Human</div>
+                    </div>
+                    <!--character power level-->
+                    <div class="power-stat">
+                        <img class="power-icon" src="https://www.bungie.net/common/destiny2_content/icons/7c30e0e489e51a3920b4446684fbcdb1.png" />
+                        <span class="power-text">1338 <sup>4</sup>/<sub>8</sub></span>
+                        <span class="operator">=</span>
+                        <img class="base-power-icon" src="~/images/max-base-power-icon.svg" />
+                        <span class="power-text">1319 <sup>4</sup>/<sub>8</sub></span>
+                        <span class="operator">+</span>
+                        <img class="seasonal-power" src="~/images/seasonal-power.svg" />
+                        <span class="power-text">19</span>
+                    </div>
+                </div>
+                <!--character stats-->
+                <div class="stat-row">
+                    <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c9aa8439fc71c9ee336ba713535569ad.png" />
+                    <span class="stat-text">30</span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/9f5f65d08b24defb660cebdfd7bae727.png" />
+                        <span class="stat-text">40</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/47e16a27c8387243dcf9b5d94e26ccc4.png" />
+                        <span class="stat-text">106</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/ca62128071dc254fe75891211b98b237.png" />
+                        <span class="stat-text">104</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/59732534ce7060dba681d1ba84c055a6.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c7eefc8abbaa586eeab79e962a79d6ad.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col max-charbox-width">
+                <div class="char-box">
+                    <!--char box-->
+                    <div class="emblem-box">
+                        <div class="row char-info-1">
+                            <!--char name and level-->
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col char-text p-0">Hunter</div>
+                                    <div class="col char-level p-0">
+                                        <img class="light-icon" src="~/images/light-icon.svg" />
+                                        1330
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col loadout-button text-center ">
+                                <span class="loadout-icon"><i class="fas fa-ellipsis-v"></i></span>
+                            </div>
+                        </div>
+                        <!--char class-->
+                        <div class="char-class p-0">Human</div>
+                    </div>
+                    <!--character power level-->
+                    <div class="power-stat">
+                        <img class="power-icon" src="https://www.bungie.net/common/destiny2_content/icons/7c30e0e489e51a3920b4446684fbcdb1.png" />
+                        <span class="power-text">1338 <sup>7</sup>/<sub>8</sub></span>
+                        <span class="operator">=</span>
+                        <img class="base-power-icon" src="~/images/max-base-power-icon.svg" />
+                        <span class="power-text">1319 <sup>7</sup>/<sub>8</sub></span>
+                        <span class="operator">+</span>
+                        <img class="seasonal-power" src="~/images/seasonal-power.svg" />
+                        <span class="power-text">19</span>
+                    </div>
+                </div>
+                <!--character stats-->
+                <div class="stat-row">
+                    <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c9aa8439fc71c9ee336ba713535569ad.png" />
+                    <span class="stat-text">30</span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/9f5f65d08b24defb660cebdfd7bae727.png" />
+                        <span class="stat-text">40</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/47e16a27c8387243dcf9b5d94e26ccc4.png" />
+                        <span class="stat-text">106</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/ca62128071dc254fe75891211b98b237.png" />
+                        <span class="stat-text">104</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/59732534ce7060dba681d1ba84c055a6.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                    <span class="stat-box">
+                        <img class="stat-icon" src="https://www.bungie.net/common/destiny2_content/icons/c7eefc8abbaa586eeab79e962a79d6ad.png" />
+                        <span class="stat-text">39</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-5 max-charbox-width">
+                <div class="char-box">
+                    <!--char box-->
+                    <div class="vault-box">
+                        <div class="row char-info-1">
+                            <!--char name and level-->
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col vault-logo p-0"></div>
+                                    <div class="col vault-text p-0">Vault</div>
+                                </div>
+                            </div>
+                            <div class="col loadout-button text-center">
+                                <span class="loadout-icon"><i class="fas fa-ellipsis-v"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--glimmer...-->
+                    <div class="currency-row">
+                        <span class="currency-box">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/36dd52a3005cb28f7f68448f1ab76c1e.png" />
+                            <span class="currency-value">250,000</span>
+                        </span>
+                        <span class="currency-box">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/1ff4a008cb851794ccb588e4eb3918a1.png" />
+                            <span class="currency-value">1450</span>
+                        </span>
+                        <span class="currency-box">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/00b8fd588be5678ad3f94d75dc6a3b19.png" />
+                            <span class="currency-value">12,000</span>
+                        </span>
+                    </div>
+                    <!--transmog-->
+                    <div class="currency-row">
+                        <span class="transmog-box">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/2d7d145161f893a8e0f313f0b9c345f9.jpg" />
+                            <span class="currency-value">10</span>
+                        </span>
+                        <span class="transmog-red">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/b9f6478d5350b4cfcc413231ca83947c.jpg" />
+                            <span class="currency-value">12</span>
+                        </span>
+                        <span class="transmog-box">
+                            <img class="currency-icon" src="https://www.bungie.net/common/destiny2_content/icons/182e59137a78545602c64f844b549bad.jpg" />
+                            <span class="currency-value">9</span>
+                        </span>
+                    </div>
+                    <!--vault/inventory-->
+                    <div class="currency-row">
+                        <span class="vspace-box">
+                            <img class="vspace-icon" src="/images/max-base-power-icon.svg" />
+                            <span class="currency-value vspace-text-pos">450/500</span>
+                        </span>
+                        <span class="consumable-box">
+                            <img class="vspace-icon" src="/images/consumables.png" />
+                            <span class="currency-value">45/50</span>
+                        </span>
+                        <span class="currency-box">
+                            <img class="vspace-icon" src="/images/mods.svg" />
+                            <span class="currency-value mods-text-pos">42/50</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+    @RenderBody()
+
+
+
+    @RenderSection("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/popper/dist/popper.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul.navbar-nav > li").click(function (e) {
+                $("ul.navbar-nav > li").removeClass("active");
+                $(this).addClass("active");
+            })
+        })
+    </script>
+</body>
+</html>
